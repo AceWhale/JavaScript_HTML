@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics</title>
+</head>
+
+<body>
+    <p> Среда выполнения - Браузер</p>
+    <ul>
+        <li>
+            В атрибуте тегов: <b onclick="alert('i was clicked')">Click me</b>
+        </li>
+        <li>
+            Отдельным тегом &lt;script> с телом в виде кода
+            <script>console.log('Hello world!')</script>
+        </li>
+        <li>
+            Ter &lt;script> з посиланням на джерело (окремий файл з кодом)
+            <script src="script1.js"></script>
+        </li>
+    </ul>
+    <p>
+        Змішувати тіло та джерело тегу неможна, одне буде ігнороване. Ter &lt;script> може бути як у "голові", так і в
+        тілі HTML. Від цього залежить момент його завантаження і виконання. З одного боку, якщо скрипт у "голові", то
+        він гарантовано відпрацює до завантаження сторінки. З іншого боку, у такому скрипті не будуть доступні елементи
+        самої сторінки, оскільки вона ще не завантажена. У більшості випадків місце підключення скриптів - кінець тіла
+        HTML.
+    </p>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button[data-key] {
+            color: red;
+        }
+        .user-block{
+            background-color: antiquewhite;
+            border: 1px solid gray;
+            margin: 5px 20px;
+            padding: 5px 10px;
+            width: 75vw;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Комлексные типы данных: массив, объекты</h1>
+
+    <div style="display: flex; width: 50vw; margin: auto;">
+        <div style="border: 1px solid gray;">
+            <h3>Доступные поля объекта</h3>
+            <div id="current-fields"></div>
+        </div>
+        <div style="border: 1px solid gray;">
+            <h3>Додати нове поле</h3>
+            <label><input id="add-field-name" placeholder="name" /></label>
+            <label><input id="add-field-value" placeholder="value" /></label>
+            <button id="add-field-button" type="button">Додати</button>
+        </div>
+        
+    </div>
+    <div class="user-block">
+        <div id="registered-users">
+            <label><input></label>
+            <label><input></label>
+            <button type="button">Зарегистрировать</button>
+        </div>
+    </div>
+    <script src="complex.js"></script>
+</body>
+
+</html>
